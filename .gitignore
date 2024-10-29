@@ -1,2 +1,5 @@
 **/*.pyc
-results
+
+original_data
+original_results
+original_weights
