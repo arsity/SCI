@@ -1,5 +1,7 @@
 **/*.pyc
 
+EXP
+
 original_data
 original_results
 original_weights

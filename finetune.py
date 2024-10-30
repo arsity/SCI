@@ -98,7 +98,7 @@ def main():
                 with torch.no_grad():
                     for _, (input, image_name) in enumerate(test_queue):
                         input = Variable(input).cuda()
-                        image_name = image_name[0].split('\\')[-1].split('.')[0]
+                        image_name = image_name[0].split('/')[-1].split('.')[0]
                         illu, ref = model(input)
 
                         u_name = '%s.png' % (image_name + '_' + str(total_step) + '_ref_')
